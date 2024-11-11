@@ -15,14 +15,15 @@
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "UMSI%20STUDENT%20LIFE.html">UMSI Student Life</a></li>
-                <li><a href = "MAIZE%20&%20BLUE%20CUPBOARD.html">Maize & Blue Cupboard</a></li>
-                <li><a href = "MSI%20ACADEMIC%20ADVISING%20RESOURCE.html">MSI Academic Advising Resource</a></li>
+                <li><a href = "MAIZE%20&%20BLUE%20CUPBOARD.html" class = "sel">Maize & Blue Cupboard</a></li>
+                <li><a href = "MSI%20ACADEMIC%20ADVISING%20RESOURCE.html">Academic Advising Resource</a></li>
             </ul>
         </nav>
         <h1>Maize & Blue Cupboard</h1>
 
     </header>
     <main id="main">
+        <div class="container">
         <div>
             <h2>Welcome to Maize & Blue Cupboard</h2>
             <p>To ensure members of the University of Michigan community—whether on a tight budget or physically restrained from getting to a grocery store—receive equitable access to healthy, nutritious, and nourishing food and the ability to prepare it for themselves or others.</p>
@@ -45,24 +46,25 @@
             </ul>
         </div>
         <div>
-            <h2>Food News</h2>
-            <section>
-                <h3>Fall 2024 Mobile Distribution for North Campus</h3>
+            <h2>NEWS: Fall 2024 Mobile Distribution for North Campus</h2>
                 <p>U-M's Maize & Blue Cupboard (MBC), the College of Engineering, Student Life, and Ann Arbor-based Food Gatherers will host North Campus mobile food distributions to make MBC resources more accessible for North Campus residents.</p>
-            </section>
-            <section>
-                <h3>Mobile Distribution for North Campus — Fall 2023 Semester</h3>
+        </div>
+        <div>
+            <h2>NEWS: Mobile Distribution for North Campus — Fall 2023 Semester</h2>
                 <p>Students who live on North Campus have easier access to free groceries thanks to U-M's Maize & Blue Cupboard (MBC), the College of Engineering, Student Life, and Ann Arbor-based Food Gatherers.</p>
-            </section>    
-            <section>
-                <h3>Federal Assistance for Food Insecurity</h3>
+        </div> 
+        <div>
+            <h2>NEWS: Federal Assistance for Food Insecurity</h2> 
                 <p>The U.S. Department of Agriculture offers a nationwide program to help people who are struggling with food insecurity. The national name for the program is Supplemental Nutrition Assistance Program</p>
-            </section>
+        </div>
         </div>
     </main>
     <footer>
-        <p>&copy; Copyright 2024 Regents of the University of Michigan</p>
+        <p>&copy; Copyright <span id="year"></span> Regents of the University of Michigan</p>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 

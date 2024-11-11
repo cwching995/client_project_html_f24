@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/404.css">
+    <title>404 - Page Not Found</title>
+</head>
+<body>
+    <header>
+        <h1>404</h1>
+        <h2>Oops! Page Not Found</h2>
+        <p>Sorry, the page you are looking for does not exist. Please check the URL or return to the homepage.</p>
+        <a href="index.html" class="link-box">Return to Home Page</a>
+    </header>
+    <footer>
+        <p>&copy; Copyright <span id="year"></span> Regents of the University of Michigan</p>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

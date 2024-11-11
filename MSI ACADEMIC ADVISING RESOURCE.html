@@ -16,12 +16,13 @@
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "UMSI%20STUDENT%20LIFE.html">UMSI Student Life</a></li>
                 <li><a href = "MAIZE%20&%20BLUE%20CUPBOARD.html">Maize & Blue Cupboard</a></li>
-                <li><a href = "MSI%20ACADEMIC%20ADVISING%20RESOURCE.html">MSI Academic Advising Resource</a></li>
+                <li><a href = "MSI%20ACADEMIC%20ADVISING%20RESOURCE.html" class = "sel">Academic Advising Resource</a></li>
             </ul>
         </nav>
         <h1>Academic Advising Overview</h1>
     </header>
     <main id="main">
+        <div class="container">
         <div>
             <h2>What is Academic Advising?</h2>
             <p>Academic Advising is a process where students envision, execute, and reflect on their academic plans with guidance from a qualified UMSI Academic Advisor. Students share their goals, challenges, and questions with their academic advisor, and their academic advisor contributes knowledge of university and program requirements, policies, and processes. Together, we develop an academic plan that aligns with the student's personal and professional goals.  </p>
@@ -47,11 +48,14 @@
                 <li><a href = "https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/mission-values-and-vision?authuser=0">Residential Advising Mission, Vision, and Values</a></li>
             </ul>
         </div>
-
+        </div>
     </main>
     <footer>
-        <p>&copy; Copyright 2024 Regents of the University of Michigan</p>
+        <p>&copy; Copyright <span id="year"></span> Regents of the University of Michigan</p>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 

@@ -14,15 +14,16 @@
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "UMSI%20STUDENT%20LIFE.html">UMSI Student Life</a></li>
+                <li><a href = "UMSI%20STUDENT%20LIFE.html" class = "sel">UMSI Student Life</a></li>
                 <li><a href = "MAIZE%20&%20BLUE%20CUPBOARD.html">Maize & Blue Cupboard</a></li>
-                <li><a href = "MSI%20ACADEMIC%20ADVISING%20RESOURCE.html">MSI Academic Advising Resource</a></li>
+                <li><a href = "MSI%20ACADEMIC%20ADVISING%20RESOURCE.html">Academic Advising Resource</a></li>
             </ul>
         </nav>
         <h1>UMSI Student Life</h1>
 
     </header>
     <main id="main">
+        <div class="container">
         <div>
             <h2>UMSI Student Life's Mission</h2>
             <p>UMSI Student Life's mission is to enrich each UMSI student's experience while cultivating an inclusive and welcoming community at the school. We are committed to enhancing student educational experiences through programs, services, and opportunities that develop skills and foster a positive and accessible environment for all UMSI students starting with orientation through graduation. While considering multiple aspects of the student experience, Student Life strives to engage every student across UMSI's academic programs through its pillars of student leadership, community, well-being and campus life.  </p>
@@ -43,16 +44,20 @@
         </div>
         <div>
             <h2>Life in Ann Arbor</h2>
-            <p>Life in Ann Arbor provides resources for students, including information about housing, parking, transportation, entertainment and life in Ann Arbor. </p>
+            <p>Life in Ann Arbor provides resources for students, including information about housing, parking, transportation, entertainment and life in Ann Arbor. Located in southeast Michigan, Ann Arbor is a vibrant university town, technology and innovation hotspot, and culinary center with an active downtown scene. Frequently voted the best place to live in Michigan, Ann Arbor blends the charm of the U.S. midwest with multicultural influences from around the globe.</p>
         </div>
         <div>
             <h2>The Academic Programs and Student Life team</h2>
             <p>The Academic Programs and Student Life team is situated within the Office of Academic and Student Affairs. Our team leads a wide range of success-oriented work with and for current students at the School of Information (UMSI) across academic programs. We strive to enhance the student educational experience through programs, services, and opportunities that support academic success, develop skills, and foster a positive and accessible environment for all UMSI students starting at the point they matriculate to a UMSI program. </p>
         </div>
+        </div>
     </main>
     <footer>
-        <p>&copy; Copyright 2024 Regents of the University of Michigan</p>
+        <p>&copy; Copyright <span id="year"></span> Regents of the University of Michigan</p>
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 
